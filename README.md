@@ -1,5 +1,5 @@
 # Sphere Space Navigation Test using skid steer bot
-![skid-steer robot model](images/skid-steer-bot.png)
+![skid-steer robot model](images/sphere_space_demo_skid_steer.png)
 
 ## Project website
 
@@ -52,7 +52,7 @@ rosrun skid_steer_bot move_base.py
 
 Gazebo and Rviz will load and you should arrive at a result similar to the below.
 
-![Gazebo & RViz with costmap](images/RvizGazebo.png)
+![sphere_space_demo](images/sphere_space_demo.gif)
 
 
 ## License
