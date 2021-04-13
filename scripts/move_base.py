@@ -81,7 +81,19 @@ if __name__ == '__main__':
         rospy.init_node('nav_test', anonymous=False)
         navigator = GoToPose()
 
-        sphere_space_coordinate_li = [(1,0),(1,0)]
+
+        #################################################
+        ######## SPHERE SPACE NAVIGATION ################
+        #################################################   
+        start = (-4.5,0)
+        goal = (4.5,0)
+
+        kappa = 1
+        obstacle_li = [((-0.5,-1),2)] 
+        my_SSN = SSN(q_start=start,q_goal=goal,circular_obstacle_li=obstacle_li,kappa=kappa)
+        sphere_space_coordinate_li = my_SSN.get_coordinate_li()
+
+        idx = 0
         while idx < len(sphere_space_coordinate_li) :
             xyuv_li = sphere_space_coordinate_li[idx]
             xy, uv = xyuv_li
