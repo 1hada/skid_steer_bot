@@ -1,17 +1,9 @@
-# Sphere Space Navigation Test
-A repo developed on Friday March 5th.
-
-![skid-steer robot model](images/sphere_space_demo_skid_steer.png)
+# Sphere Space Navigation Test using skid steer bot
+![skid-steer robot model](images/skid-steer-bot.png)
 
 ## Project website
 
-This repository is meant to demonstrate a ROS implementation of path planning via Sphere Space Navigation.
-
-The Sphere Space Navigation is based on the following [paper](https://kodlab.seas.upenn.edu/uploads/Kod/Rimon92.pdf) 
-``` E Rimonand D Koditschek. “Exact robot navigation using artificial potential functions”. 1992. ```
-
-
-NOTE : The skid steer bot used was forked from [here](https://github.com/Heych88/skid_steer_bot).
+This repository is meant to demonstrate a ROS implementation of path planning via Sphere Space Navigation. The skid steer bot used was forked from [here](https://github.com/Heych88/skid_steer_bot).
 
 ## Prerequisites
 
@@ -29,6 +21,13 @@ sudo apt-get install ros-melodic-eband-local-planner -y
 sudo apt-get install ros-melodic-global-planner -y
 sudo apt install python-pip -y
 pip install sympy
+```
+
+## New Install
+```
+git clone https://github.com/Greenzie/boustrophedon_planner
+git clone https://github.com/PickNikRobotics/rosparam_shortcuts.git
+sudo apt-get install libcgal-dev # computational geometry algorithms library
 ```
 
 ## Installing
@@ -60,7 +59,7 @@ rosrun skid_steer_bot move_base.py
 
 Gazebo and Rviz will load and you should arrive at a result similar to the below.
 
-![sphere_space_demo](images/sphere_space_demo.gif)
+![Gazebo & RViz with costmap](images/RvizGazebo.png)
 
 
 ## License
