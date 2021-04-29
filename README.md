@@ -1,9 +1,17 @@
-# Sphere Space Navigation Test using skid steer bot
-![skid-steer robot model](images/skid-steer-bot.png)
+# Sphere Space Navigation Test
+A repo developed on Friday March 5th.
+
+![skid-steer robot model](images/sphere_space_demo_skid_steer.png)
 
 ## Project website
 
-This repository is meant to demonstrate a ROS implementation of path planning via Sphere Space Navigation. The skid steer bot used was forked from [here](https://github.com/Heych88/skid_steer_bot).
+This repository is meant to demonstrate a ROS implementation of path planning via Sphere Space Navigation.
+
+The Sphere Space Navigation is based on the following [paper](https://kodlab.seas.upenn.edu/uploads/Kod/Rimon92.pdf) 
+``` E Rimonand D Koditschek. “Exact robot navigation using artificial potential functions”. 1992. ```
+
+
+NOTE : The skid steer bot used was forked from [here](https://github.com/Heych88/skid_steer_bot).
 
 ## Prerequisites
 
@@ -52,7 +60,7 @@ rosrun skid_steer_bot move_base.py
 
 Gazebo and Rviz will load and you should arrive at a result similar to the below.
 
-![Gazebo & RViz with costmap](images/RvizGazebo.png)
+![sphere_space_demo](images/sphere_space_demo.gif)
 
 
 ## License
